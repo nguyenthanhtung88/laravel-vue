@@ -8,14 +8,20 @@
         <title>Laravel</title>
     </head>
     <body>
-        <div id="root">
-            <ul>
-                <li v-for="skill in skills" v-text="skill"></li>
-            </ul>
+        <div id="one">
+            <h1>
+                @{{ shared.user.name }}
+            </h1>
+        </div>
+
+        <div id="two">
+            <h1>
+                @{{ shared.user.name }}
+            </h1>
         </div>
 
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/2.2.0/vue.js"></script>
-        <script src="/js/app.js"></script>
+        <script src="/js/shared-state.js"></script>
     </body>
 </html>
